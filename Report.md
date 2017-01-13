@@ -187,7 +187,7 @@ plot(rules_ec_pruned)
 ```r
 plot(rules_ec_pruned, method="grouped")
 ```
-![VisRule](https://github.com/DMining/Extended-Bakery-ARM/blob/master/Images/e_rulesEcPruned_grouped.png?raw=true)
+![VisRule](https://github.com/DMining/Extended-Bakery-ARM/blob/master/Images/e_rulesEcPruned_grouped1.png?raw=true)
 ```r
 plot(rules_ec_pruned, method="graph", shading="confidence")
 ```
