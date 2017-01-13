@@ -83,16 +83,22 @@ Visualize the rules from apriori algorithm
 ```r
 plot(rules_pruned)
 ```
+![VisRule](https://github.com/DMining/Extended-Bakery-ARM/blob/master/Images/a_rulespruned.png?raw=true)
 ```r
 plot(rules_pruned, method="grouped")
 ```
+![VisRule](https://github.com/DMining/Extended-Bakery-ARM/blob/master/Images/a_rulespruned_grouped.png?raw=true)
 ```r
 plot(rules_pruned, method="graph", shading="confidence")
 ```
+![VisRule](https://github.com/DMining/Extended-Bakery-ARM/blob/master/Images/a_rulespruned_graph_conf.png?raw=true)
+
 ```r
 plot(rules_pruned, measure = c("support", "lift"), shading="confidence")
 ```
+![VisRule](https://github.com/DMining/Extended-Bakery-ARM/blob/master/Images/a_rulespruned-supp-lift_conf.png?raw=true)
 
+***
 We then try it with **eclat algorithm**
 ```r
 #Mining using Eclat algorithm
