@@ -4,7 +4,7 @@
 ###Objectives: What is the domain and what are the potential benefits to be derived from association rule mining?
 A bakery produces and sells products such as bread, cookies, cakes, and so on. One of the goals is to earn maximum profit. By understanding the patterns of how customers purchase in the bakery, they can know which product they should put more focus on. For example, if tarts have the highest number of purchase among the items which means that tarts are the most popular product, and pies on the other hand have the lowest number of purchase, are the least popular product of the bakery. By knowing the patterns, the bakery could increase their profit by producing more of the popular products while decrease the amount of least popular product in order to prevent wastage and keeping their products fresh. Besides, the bakery could find out what other products would likely be purchased along with the most popular products. Thus, they could do some arrangement for products in order to increase the total sales of their bakery. It is a physiological way to attract customers, but it is a strategic for them to increase sales from analyzing the patterns.
 
-###Data set description: What is in the data, and what preprocessing was done to make it amenable for association rule mining. Where choices were made (e.g., parameter settings for discretization, or decisions to ignore an attribute), describe your reasoning behind the choices.
+###Data Set Description: What is in the data, and what preprocessing was done to make it amenable for association rule mining. Where choices were made (e.g., parameter settings for discretization, or decisions to ignore an attribute), describe your reasoning behind the choices.
 The dataset we are using is “1000-out1.csv”. It contains information about one year worth of sales information for bakery shops. The dataset chosen have 1000 instances. Each purchase is represented by a receipt number which is the first column in the data. Each item is represented by an item ID from 0 to 49 which totalled to 50 types of items. 
 In preprocessing, item ID is replaced by item name to reduce confusion.
 
@@ -22,7 +22,7 @@ goods_name <- data.frame(id, name)
 data_trans@itemInfo$labels <- goods_name$name[match(data_trans@itemInfo$labels,goods_name$id)] 
 ```
 ***
-###Rule mining process and resulting rules
+###Rule Mining Process and Resulting Rules
 We will use *apriori algorithm* and *eclat algorithm* for rule mining, and show the top 10 rules sorted by confidence. ```proc.time()``` is used to determine the time used for the algorithm.
 
 First use __apriori algorithm__ for rule mining: 
