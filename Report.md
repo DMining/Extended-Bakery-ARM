@@ -216,7 +216,9 @@ prodCount <- sort(prodCount, decreasing = TRUE)
 barplot(prodCount, main="Occurence of items in transaction", ylab="Num of Occurences"  , las=2, cex.names=0.6, beside=FALSE, ylim = c(0,120), border="blue") 
 ```
 Plot: 
-
+<p align="center">
+     <img src="https://github.com/DMining/Extended-Bakery-ARM/blob/master/Images/barplot_occurrentOfTransaction%20.png?raw=true"/>
+</p>
 From the plot, we can see that Gongolals Cookie appears most often in transactions for "1000-out1.csv"
 ```r
 ##Most bought: Gongolals Cookie for 1000-out.csv
