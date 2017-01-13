@@ -177,15 +177,19 @@ Visualize the rules from eclat algorithm
 ```r
 plot(rules_ec_pruned)
 ```
+![VisRule](https://github.com/DMining/Extended-Bakery-ARM/blob/master/Images/e_rulesEcPruned.png?raw=true)
 ```r
 plot(rules_ec_pruned, method="grouped")
 ```
+![VisRule](https://github.com/DMining/Extended-Bakery-ARM/blob/master/Images/e_rulesEcPruned_grouped.png?raw=true)
 ```r
 plot(rules_ec_pruned, method="graph", shading="confidence")
 ```
+![VisRule](https://github.com/DMining/Extended-Bakery-ARM/blob/master/Images/e_rulesEcPruned_graph_conf.png?raw=true)
 ```r
 plot(rules_ec_pruned, measure = c("support", "lift"), shading="confidence")
 ```
+![VisRule](https://github.com/DMining/Extended-Bakery-ARM/blob/master/Images/e_rulesEcPruned-supp-lift_conf.png?raw=true)
 
 We can also identify the most bought item from the transactions, and use ARM to discover the items that are bought frequently with it.
 ```r
