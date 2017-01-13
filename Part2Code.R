@@ -1,5 +1,5 @@
 #We will be using "1000-out1.csv"
-setwd("C:/Users/Khoo Huai Swan/Desktop/Oct 2016/TDS3301 Data Mining/Assignment/Part2/Part2R")
+#setwd("")
 
 install.packages("arules") 
 library(arules) 
@@ -76,7 +76,6 @@ barplot(prodCount, main="Occurence of items in transaction", ylab="Num of Occure
 
 ####
 
-
 #Identify rules based on previous plot, by taking the most popular item to identify which other items are bought alongside
 ##Most bought: Gongolals Cookie for 1000-out.csv
 rules_pop1<-apriori(data_trans, parameter=list(supp=0.003,conf = 0.5), 
@@ -85,8 +84,6 @@ inspect(rules_pop1)
 rules_pop2<-apriori(data_trans, parameter=list(supp=0.003,conf = 0.5), 
                    appearance = list(default="rhs",lhs="Gongolals Cookie"))
 inspect(rules_pop2)
-
-
 
 
 ########################################################################################
